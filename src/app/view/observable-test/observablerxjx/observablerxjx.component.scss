@@ -1,0 +1,35 @@
+.root {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    background-color: blueviolet;
+    height: 50px;
+    flex-direction: column;
+}
+
+.content {
+    display: flex;
+    flex: 1;
+}
+
+.videos {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: red;
+    flex: 1;
+}
+
+.video {
+    background-color: yellow;
+    border: 1px solid black;
+    width: 33%;
+}
+
+.chatArea {
+    background-color: green;
+    width: 250px;
+}

@@ -1,0 +1,66 @@
+<form [formGroup]="studentForm">
+  <label>Studnet name </label> 
+  <input formControlName="name"/>
+
+  <br/>
+
+  <label>Studnet course </label>
+  <select formControlName="course">
+    <option *ngFor="let c of coruses" [value]=c>{{c}}</option>
+  </select>
+  
+  <br/>
+
+  <label>Gender</label>
+  <input type="radio" value="M" id="male" formControlName="gender" [checked]=""/>
+  <label for="male">Male</label>
+  <input type="radio" value="F" id="female" formControlName="gender" />
+  <label for="female">Female</label>
+
+
+  <br/>
+
+  <div formGroupName="address">
+    Address<br/>
+    <label>Street</label>
+    <input formControlName="street"/>
+    
+    <br/>
+    
+    <label>city</label>
+    <input formControlName="city" />
+  </div>
+
+  <br/>
+  <div>
+    Phone
+  </div>
+
+  <div formArrayName="phoneNumbers">
+    <div class="error" *ngIf="phoneNumberArray.errors">
+      <div *ngIf="phoneNumberArray.errors.primaryPhoneNumberEmpty">Phone number cannot be empty</div>
+      <div *ngIf="phoneNumberArray.errors.atleastOnePrimaryNumber">Atleast one primary number</div>
+    </div>
+    <div *ngFor="let phoneNumber of phoneNumberArray.controls; let i=index">
+      <div [formGroupName]="i">
+        <input formControlName="phone" />
+        <input type="checkbox" [value]="i"  formControlName="isPrimary" (change)="onPrimaryPhoneChange($event, i)"/>
+        <button (click)="removePhone(i)" *ngIf="!phoneNumber.get('isPrimary').value">Remove</button>
+      </div>
+    </div>
+  </div>
+
+  <button (click)="addPhone()" >Add Phone</button>
+
+  <br/>
+  <br/>
+  <p>
+    Form Status: {{ studentForm.status }}
+  </p>
+
+  <button (click)=onFormClick()>Submit</button>
+
+</form>
+
+
+<pre>{{studentForm.value | json }}</pre>

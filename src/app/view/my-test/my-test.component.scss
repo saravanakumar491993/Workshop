@@ -1,0 +1,13 @@
+:host-context(.light-theme) .txtTheme
+{
+    background-color: blue;
+}
+
+:host-context(.dark-theme) .txtTheme
+{
+    background-color: orange;
+}
+
+.txtTheme {
+    background-color: wheat;
+}
