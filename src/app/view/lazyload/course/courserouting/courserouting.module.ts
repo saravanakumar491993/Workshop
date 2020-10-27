@@ -5,8 +5,7 @@ import { CommonModule } from '@angular/common';
 
 const routes: Routes = [
   {
-    path: '',
-    component: CoursehomeComponent
+    path: '', component: CoursehomeComponent
   }
 ];
 

@@ -9,6 +9,12 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { ObservablerxjxComponent } from './view/observable-test/observablerxjx/observablerxjx.component';
 import { ApproutingModule } from './approuting/approuting.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
+import { InterceptorTestComponent } from './view/interceptor-test/interceptor-test.component';
+import { httpInterceptorProviders } from './interceptor/interceptorprovider';
+import { UploadViewComponent } from './view/upload/upload-view/upload-view.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -16,15 +22,19 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MyTestComponent,
     StudentformComponent,
     ObservablerxjxComponent,
-    AnimtestComponent
+    AnimtestComponent,
+    InterceptorTestComponent,
+    UploadViewComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
     ApproutingModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
   ],
-  providers: [],
+  providers: [httpInterceptorProviders],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
