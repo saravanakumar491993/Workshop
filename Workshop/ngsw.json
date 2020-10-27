@@ -1,0 +1,76 @@
+{
+  "configVersion": 1,
+  "timestamp": 1603779521066,
+  "index": "https://github.com/saravanakumar491993/Workshop/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://github.com/saravanakumar491993/Workshop/5.12fe32145c14fdab4eb4.js",
+        "https://github.com/saravanakumar491993/Workshop/es2015-polyfills.4026386deac8c168a6f4.js",
+        "https://github.com/saravanakumar491993/Workshop/favicon.ico",
+        "https://github.com/saravanakumar491993/Workshop/index.html",
+        "https://github.com/saravanakumar491993/Workshop/main.89c7155acedc72430b84.js",
+        "https://github.com/saravanakumar491993/Workshop/polyfills.7ff3fc35f9bdbaf81d86.js",
+        "https://github.com/saravanakumar491993/Workshop/runtime.8ee8ee9e0f554d6254aa.js",
+        "https://github.com/saravanakumar491993/Workshop/styles.64c8cfd285a4f1d56573.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://github.com/saravanakumar491993/Workshop/assets/icons/icon-128x128.png",
+        "https://github.com/saravanakumar491993/Workshop/assets/icons/icon-144x144.png",
+        "https://github.com/saravanakumar491993/Workshop/assets/icons/icon-152x152.png",
+        "https://github.com/saravanakumar491993/Workshop/assets/icons/icon-192x192.png",
+        "https://github.com/saravanakumar491993/Workshop/assets/icons/icon-384x384.png",
+        "https://github.com/saravanakumar491993/Workshop/assets/icons/icon-512x512.png",
+        "https://github.com/saravanakumar491993/Workshop/assets/icons/icon-72x72.png",
+        "https://github.com/saravanakumar491993/Workshop/assets/icons/icon-96x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "https://github.com/saravanakumar491993/Workshop/5.12fe32145c14fdab4eb4.js": "59d2209e62a76af66028f36c4b1c10917a96a202",
+    "https://github.com/saravanakumar491993/Workshop/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "https://github.com/saravanakumar491993/Workshop/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "https://github.com/saravanakumar491993/Workshop/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "https://github.com/saravanakumar491993/Workshop/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "https://github.com/saravanakumar491993/Workshop/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "https://github.com/saravanakumar491993/Workshop/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "https://github.com/saravanakumar491993/Workshop/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "https://github.com/saravanakumar491993/Workshop/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "https://github.com/saravanakumar491993/Workshop/es2015-polyfills.4026386deac8c168a6f4.js": "207ad12781a7aba0fba8c5e505a18d35dd06a410",
+    "https://github.com/saravanakumar491993/Workshop/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
+    "https://github.com/saravanakumar491993/Workshop/index.html": "f05b28e01aa5bdcdd7d1a920af257f443d8604fc",
+    "https://github.com/saravanakumar491993/Workshop/main.89c7155acedc72430b84.js": "dc28a76df7063b96ab0654d1629602f03be90551",
+    "https://github.com/saravanakumar491993/Workshop/polyfills.7ff3fc35f9bdbaf81d86.js": "31dba5e00bce089fa3ecb1df8e1f2c22b84d32cc",
+    "https://github.com/saravanakumar491993/Workshop/runtime.8ee8ee9e0f554d6254aa.js": "bf47f07e13ff0b7ce3267484e6b7206bd0fb6891",
+    "https://github.com/saravanakumar491993/Workshop/styles.64c8cfd285a4f1d56573.css": "1867cfa75981890a3b79d9775f836930943f0ef6"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
